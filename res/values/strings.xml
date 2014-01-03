@@ -4,6 +4,8 @@
     <string name="app_name">FinancialCalculator</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
 	<string-array name="calculator_names">
 	    <item > TVM Calculator</item>
 	    <item > Currency Calculator</item>
@@ -24,4 +26,5 @@
 	    <item > Stock Calculator</item>
 	    <item > Miscellaneous Calculator</item>
 	</string-array>
+	<color name="iosBlue">#007AFF</color>
 </resources>

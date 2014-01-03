@@ -4,17 +4,24 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+import com.team_argati.R;
+import com.team_argati.compound.CompoundActivity;
+import com.team_argati.loan.LoanActivity;
+
+public class MainActivity extends Activity implements OnItemClickListener{
 
 	private static ArrayList<SingleRow>  adapter ;
 	String names [];
@@ -48,7 +55,12 @@ public class MainActivity extends Activity {
 		
 		listView = (ListView) findViewById(R.id.listView);
 		listView.setAdapter(new CustomView(getApplicationContext(), adapter));
-		
+		listView.setOnItemClickListener(this);
+	}
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+		Intent i = new Intent(this, CompoundActivity.class);
+		startActivity(i);
 		
 	}
 	

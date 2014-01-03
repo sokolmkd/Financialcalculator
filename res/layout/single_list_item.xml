@@ -15,11 +15,12 @@
 
     <TextView
         android:id="@+id/text"
+     	android:textStyle="bold"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="left|center_vertical"
         android:layout_marginLeft="20dip"
-        android:textSize="15sp"
+        android:textSize="17sp"
         android:textColor="#323232" />
 
 </LinearLayout>
