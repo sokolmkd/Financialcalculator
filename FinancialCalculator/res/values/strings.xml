@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FinancialCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string-array name="calculator_names">
+	    <item > TVM Calculator</item>
+	    <item > Currency Calculator</item>
+	    <item > Loan Calculator</item>
+	    <item > Compound Interest Calculator</item>
+	    <item > Credit Card Payoff Calculator</item>
+	    <item > Retirement/401K Calculator</item>
+	    <item > Tip Calculator</item>
+	    <item > Calculator</item>
+	    <item > APR Calculator</item>
+	    <item > ROI Calculator</item>
+	    <item > Auto Loan Calculator</item>
+	    <item > Credit Card Minimum Payment</item>
+	    <item > Discount and Tax Calculator</item>
+	    <item > IRR NPV Calculator</item>
+	    <item > Percentage Calculator</item>
+	    <item > Bond Calculator</item>
+	    <item > Stock Calculator</item>
+	    <item > Miscellaneous Calculator</item>
+	</string-array>
+</resources>
