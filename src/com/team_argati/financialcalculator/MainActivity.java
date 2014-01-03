@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.team_argati.R;
 import com.team_argati.compound.CompoundActivity;
 import com.team_argati.loan.LoanActivity;
+import com.team_argati.retierment.RetiermentActivity;
 
 public class MainActivity extends Activity implements OnItemClickListener{
 
@@ -58,9 +59,16 @@ public class MainActivity extends Activity implements OnItemClickListener{
 		listView.setOnItemClickListener(this);
 	}
 	@Override
-	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-		Intent i = new Intent(this, CompoundActivity.class);
-		startActivity(i);
+	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+		
+		//vo sluchaj da se klikne compound interest kalkulatorot
+		if(position == 0){
+			Intent i = new Intent(this, CompoundActivity.class);
+			startActivity(i);
+		}else if ( position == 3){
+			Intent i = new Intent(this, RetiermentActivity.class);
+			startActivity(i);
+		}
 		
 	}
 	

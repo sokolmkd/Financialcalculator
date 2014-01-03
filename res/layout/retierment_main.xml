@@ -14,7 +14,7 @@
         <TextView
             android:id="@+id/textView1"
             style="@style/compound_text_view"
-            android:text="Principal Amount" />
+            android:text="Currently Saved" />
 
         <EditText
             android:id="@+id/compound_principal_amoun"
@@ -34,7 +34,7 @@
         <TextView
             android:id="@+id/textView1"
             style="@style/compound_text_view"
-            android:text="Monthly Deposit" />
+            android:text="Monthly Salary" />
 
         <EditText
             android:id="@+id/compound_monthlyDeposit"
@@ -54,70 +54,55 @@
         <TextView
             android:id="@+id/textView1"
             style="@style/compound_text_view"
-            android:text="Period (month)" />
+            android:text="Annual Salary Raise%" />
 
         <EditText
-            android:id="@+id/compound_period"
+            android:id="@+id/compound_monthlyDeposit"
             style="@style/compound_edit_text" >
 
             <requestFocus />
         </EditText>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <GridView
+        android:id="@+id/gridview_retierment"
+        android:layout_marginTop="20dip"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/textView1"
-            style="@style/compound_text_view"
-            android:text="AnnualInterest Rate%" />
-
-        <EditText
-            android:id="@+id/compound_interestRate"
-            style="@style/compound_edit_text" >
-
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
+        android:gravity="center"
+        android:padding="2dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dip" >
+    </GridView>
 
     <LinearLayout
+        style="?android:buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:orientation="horizontal" >
+        android:layout_marginTop="50dip"
+        android:background="@drawable/bottom_buttons" >
 
-        <TextView
-            android:id="@+id/textView1"
-            style="@style/compound_text_view"
-            android:text="Compounding" />
-
-        <Spinner
-            android:id="@+id/compoundingSpinner"
-            android:layout_width="fill_parent"
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dip"
-            android:layout_marginRight="35dip"
-            android:layout_weight="0.45"
-            android:gravity="left" 
-            android:textAlignment="textStart"
-            >
+            android:layout_weight="1"
+            android:text="@string/report" />
 
-            <requestFocus />
-        </Spinner>
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/email" />
     </LinearLayout>
 
     <LinearLayout
         style="?android:buttonBarStyle"
-        android:layout_marginTop="50dip"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:background="@drawable/bottom_buttons"
-        >
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/bottom_buttons" >
 
         <Button
             style="?android:buttonBarButtonStyle"
@@ -125,13 +110,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/reset" />
-
-        <Button
-            style="?android:buttonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/calculate" />
     </LinearLayout>
 
 </LinearLayout>
